@@ -19,7 +19,6 @@ function follow(n)
     // variavel para selecionar um botão individual.
     let numbotao = 0
 
-
     let contator = setInterval(()=>{
         let classesDobotao = botao[numbotao].classList
         // verifica se o o usuario não é sequido, então clica em sequir. 
@@ -29,7 +28,6 @@ function follow(n)
         console.log('pegou porra')
         botao[numbotao].click()
         numbotao = numbotao + 1
-
 
             if(numbotao == n){clearInterval(contator)}
             else if(numbotao == botao.length){clearInterval(contator)}
@@ -41,26 +39,4 @@ function follow(n)
             n = n + 1
         }
     },10000)
-
-
 }
-
-
-
-//     botao.forEach((v, i) =>
-//     {
-//     setTimeout(()=>
-//     {
-//         if(!v.classList.contains('.y3zKF'))
-//         {
-//             v.click();
-//             contador++;
-//             console.log('Lucas já seguiu '+ contador +' pessoas')
-
-//         } else{
-//             console.log('Você já segue esse usuario')
-//               }
-//     }, i*10000 )
-//     });
-
-// };

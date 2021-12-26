@@ -1,6 +1,5 @@
 function looplike(n){
   
-
   setTimeout(() => {
       const bnext = document.querySelector('div.JPgJ_ > div.l8mY4.feth3 > button');
       const bLike = document.querySelector('body > div._2dDPU.QPGbb.CkGkG > div._32yJO > div > article > div > div.HP0qD > div > div > div.eo2As > section.ltpMr.Slqrh > span.fr66n > button');
@@ -23,8 +22,6 @@ function looplike(n){
 };
 
 
-
-
 chrome.runtime.onMessage.addListener(curta);
   
 function curta(request, sender, sendResponse){
@@ -33,12 +30,6 @@ function curta(request, sender, sendResponse){
   if(Object.keys(msglike) != 'NumberL'){return}
     num = parseInt(msglike.NumberL)
 
-    
-    
+       
     looplike(num);  
  }
-
-
-
-
-
