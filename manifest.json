@@ -1,0 +1,25 @@
+{
+    "name": "Curtir e Seguir - automatico",
+    "version":"1.0",
+    "manifest_version":2,
+    "description":"Segue usuarios e curte post's automaticamente",
+
+    
+    "browser_action":{
+        "default_popup":"poppup/index.html",
+        "default_icon":"poppup/icon.png",
+        "default_title":"Curtir e Seguir."
+
+    },
+    "background": {
+        "scripts":["poppup/index.js"]
+    },
+
+    "content_scripts":[
+        {
+            "matches": ["https://www.instagram.com/*"],
+            "js":["background/curtir.js", "background/seguir.js"]
+        }
+    ]
+
+}
